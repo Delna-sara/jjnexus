@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<section class="contact" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('{% static 'images/Contact.jpg' %}'); padding: 107px 0; color: white; text-align: center;">
+    <div class="container">
+        <div class="overlay">
+        <h1>Contact <span>Us</span></h1>
+        <p>Get in touch with JJ Nexus Global for a bright future</p>
+    </div>
+    </div>
+</section>
+
+<section class="contact-section" style="padding: 60px 40px;">
+    <div class="container" style="max-width: 1100px; margin: auto; display: flex; flex-wrap: wrap; gap: 40px;">
+
+        <div class="contact-info" style="flex: 1; min-width: 300px;">
+            <h2 style="color: #e67e22; margin-bottom: 20px;">Reach Our Experts</h2>
+            <p style="margin-bottom: 30px; font-size: 1.1rem; color: #555;">Have questions about admissions or career guidance? Our team is ready to assist you.</p>
+
+            <section class="contact-section">
+
+    <div class="contact-container">
+
+        <!-- LEFT SIDE -->
+        <div class="contact-info">
+
+<br>
+
+            <!-- Location -->
+         <div class="contact-grid">
+
+    <div class="contact-item">
+        <h4>Visit Our Office</h4>
+         <a href="https://www.google.com/maps/search/?api=1&query=Uni+Square+Building+Kaloor+Ernakulam+Kerala"
+             target="_blank"
+              class="contact-link" style="text-decoration: none; color: #e67e22;">
+             <img src="{% static 'images/location.png' %}" style="width:16px; height:16px;">
+                Uni Square Building, Kaloor, Ernakulam, Kerala, India
+         </a>
+    </div>
+
+            <br>
+    <div class="contact-item">
+        <h4>Call Us</h4>
+           <a href="tel:+918590522461" class="contact-link" style="text-decoration: none; color: #e67e22;">
+        <img src="{% static 'images/telephone.png' %}" style="width:16px; height:16px;">
+        +91 8590522461
+    </a>
+
+</div>
+<br>
+    <div class="contact-item">
+        <h4>WhatsApp</h4>
+            <a href="https://wa.me/918590522461" target="_blank" class="contact-link" style="text-decoration: none; color: #e67e22;">
+        <img src="{% static 'images/whatsapp.png' %}" style="width:16px; height:16px;">
+        Chat on WhatsApp
+    </a>
+
+</div>
+<br>
+    <div class="contact-item">
+        <h4>Email Us</h4>
+           <a href="mailto:info@jjnexusglobal.com" class="contact-link" style="text-decoration: none; color: #e67e22;">
+        <img src="{% static 'images/gmail.png' %}" style="width:16px; height:16px;">
+        info@jjnexusglobal.com
+    </a>
+
+    </div>
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="contact-form-container">
+
+    <section class="contact-form-section">
+        <h3>Send us a Message</h3>
+
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert success">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+
+        <form action="{% url 'contact' %}" method="POST" class="contact-form">
+            {% csrf_token %}
+
+            <div class="input-group">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="tel" name="phone" placeholder="Phone Number">
+            </div>
+
+            <textarea name="message" placeholder="How can we help you?" rows="5" required></textarea>
+              <div class="btn-center">
+                <button type="submit" class="submit-btn">SEND MESSAGE</button>
+              </div>
+        </form>
+
+    </section>
+
+</div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,836 @@
+
+/* Apply to whole website */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Logo */
+.navbar-brand, .logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+.logo img {
+    height: 50px;   /* perfect balance for 18px text */
+    width: auto;
+}
+/* Container for the logo + name */
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 10px;  /* space between logo and text */
+}
+
+.brand-name {
+    font-size: 16px;  /* reduce this */
+    font-weight: bold;
+    color: white;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* Hero Section Title */
+.hero h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/* Subtitle */
+.hero p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Button */
+
+/* --- Shared Button Base --- */
+/* --- Shared Button Base (Reduced Size) --- */
+.btn {
+    padding: 5px 15px;       /* Reduced from 14px 32px to look sleeker */
+    font-size: 14px;          /* Slightly smaller font for a professional look */
+    border-radius: 6px;       /* Sharper corners often look more "corporate" */
+    font-weight: 600;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --- Primary Button & WhatsApp Button --- */
+.btn-primary, .btn-whatsapp {
+    background-color: #ff7a00 !important;
+    color: #ffffff !important;
+    position: relative;
+    box-shadow: 0 3px 10px rgba(255, 122, 0, 0.2); /* Softer shadow for smaller button */
+    animation: orange-pulse 2s infinite;
+}
+
+/* --- Hover Effects --- */
+.btn-primary:hover, .btn-whatsapp:hover {
+    background-color: #e66e00 !important;
+    transform: translateY(-2px); /* Reduced movement for a subtle feel */
+    box-shadow: 0 5px 15px rgba(255, 122, 0, 0.4);
+    animation: none;
+}
+
+/* --- The Pulse Animation (Adjusted for smaller size) --- */
+@keyframes orange-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 122, 0, 0.6);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 122, 0, 0); /* Reduced pulse spread */
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 122, 0, 0);
+    }
+}
+
+.hero h1 span {
+    color: #ff7a00;
+}
+
+.hero {
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+
+/*logo loading*/
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#loader img {
+    width: 100px;
+    animation: spin 1s linear infinite;
+}
+
+/* Optional animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/*home*/
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #f4f6f9;
+}
+
+header {
+    background: #0a2540;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+.hero {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.section {
+    padding: 40px;
+}
+
+footer {
+    background: #0a2540;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* HERO */
+
+
+.overlay {
+    text-align: center;
+    color: white;
+}
+
+.overlay h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.overlay span {
+    color: #ff7a00;
+}
+
+.overlay p {
+    font-size: 18px;
+}
+
+
+/* SERVICES */
+.services {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f4f6f9;
+}
+
+.services h2 {
+    font-size: 32px;
+    color: #0a2540;
+    margin-bottom: 30px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.service-box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-8px);
+}
+
+.service-box h3 {
+    margin-bottom: 10px;
+    color: #ff7a00;
+}
+
+
+
+/* HEALTHCARE SECTION */
+.healthcare {
+    padding: 60px 20px;
+    background: #f4f6f9;
+    text-align: center;
+}
+
+.healthcare h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #0a2540;
+}
+
+/* GRID */
+.healthcare-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* CARD */
+.health-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.health-card:hover {
+    transform: translateY(-8px);
+}
+
+/* TITLE */
+.health-card h3 {
+    color: #ff7a00;
+    margin-bottom: 10px;
+}
+
+
+/* SMALL HERO (for inner pages) */
+.small-hero {
+    height: 50vh;
+}
+
+
+
+/* COURSES SECTION */
+.courses {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.courses h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #0a2540;
+
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* COURSE CARD */
+.course-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-8px);
+}
+
+/* TITLE */
+.course-card h3 {
+    color: #ff7a00;
+    margin-bottom: 15px;
+}
+
+/* LIST */
+.course-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.course-card ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+
+
+/* SECTION */
+.colleges {
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #f8fbff, #eef3f9);
+    text-align: center;
+}
+
+.section-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+/* GRID */
+.college-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* CARD */
+.college-card {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 14px;
+    padding: 20px 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+/* HOVER EFFECT */
+.college-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+/* LOGO */
+.logo-box {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    margin-bottom: 12px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-box img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* TEXT */
+.college-content h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.location {
+    font-size: 12px;
+    color: #777;
+}
+
+.desc {
+    font-size: 12px;
+    color: #555;
+    margin: 8px 0;
+    line-height: 1.4;
+}
+
+/* BUTTON */
+.apply-btn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.apply-btn:hover {
+    background: #0056b3;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .college-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* --- General Styles --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+
+/* --- About Hero --- */
+
+
+/* --- Expertise Grid --- */
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.expertise-grid .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 5px solid #e67e22; /* Brochure Orange */
+}
+
+.expertise-grid .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.expertise-grid h3 {
+    margin-top: 0;
+    color: #e67e22;
+}
+
+/* --- Why Choose Us List --- */
+.why-us ul li {
+    font-size: 1.1rem;
+    padding: 15px 0 15px 40px;
+    border-bottom: 1px solid #eee;
+}
+
+.why-us ul li:last-child {
+    border-bottom: none;
+}
+
+.why-us ul li span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+
+
+    .expertise-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* --- Contact Page Enhancements --- */
+.contact-form-container input:focus,
+.contact-form-container textarea:focus {
+    border-color: #e67e22 !important;
+    box-shadow: 0 0 5px rgba(230, 126, 34, 0.2);
+}
+
+.contact-form-container button:hover {
+    background: #d35400 !important; /* Slightly darker orange */
+    box-shadow: 0 5px 15px rgba(230, 126, 34, 0.3);
+}
+
+/* Adjust layout for small screens */
+@media (max-width: 768px) {
+    .contact-section .container {
+        flex-direction: column;
+    }
+    .contact-info {
+        text-align: center;
+    }
+}
+
+
+/* Container for the header */
+
+
+/* The Logo styling */
+/* This targets the image inside your logo div */
+
+
+/* Optional: Add some padding to the header so the logo isn't touching the edges */
+header {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center; /* Keeps the logo and text perfectly centered vertically */
+}
+
+
+
+
+/* Style the brand name text */
+
+.home-link {
+    color: #0a2540;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+
+/*about*/
+.page-hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('/static/images/About.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* About Hero Text */
+.page-hero h1 {
+    font-size: 45px;
+    color: white;
+    margin-bottom: 10px;
+}
+/* Orange highlight like Home page */
+.page-hero h1 span {
+    color: #ff7a00;
+}
+
+/* Subtitle */
+.page-hero p {
+    color: white;
+    font-size: 18px;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f4f6f9;
+}
+
+header {
+    background: #0a2540;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+
+
+.section {
+    padding: 40px;
+}
+
+footer {
+    background: #0a2540;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* FOOTER */
+.footer {
+    background: #0a2540;
+    color: white;
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    padding: 50px 20px;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #ff7a00;
+}
+
+.footer-column a {
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+.footer-column a:hover {
+    color: #ff7a00;
+    padding-left: 5px;
+}
+
+.footer-column p {
+    margin-bottom: 8px;
+    color: #ddd;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    background: #071a2d;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.know-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #1e4b8f;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.know-btn:hover {
+    background: #163b70;
+    transform: translateY(-2px);
+}
+
+.know-btn {
+    display: block;
+    width: 80%;
+    text-align: center;
+}
+
+.contact-hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('/static/images/contact.jpg'); /* change name */
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    background: #f5f7fa;
+}
+
+.contact-form-section {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.contact-form-section h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.input-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.input-group input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+textarea {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.submit-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    border: none;
+    background: #2a5298;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #1e3c72;
+}
+
+.alert.success {
+    background: #d4edda;
+    color: #155724;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+
+
+/* Mobile Responsive: Stack inputs on small screens */
+@media (max-width: 768px) {
+    .input-group {
+        grid-template-columns: 1fr;
+    }
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+img.icon {
+    width: 14px !important;
+    height: 14px !important;
+    display: inline-block;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: #333;
+}
+
+.contact-link:hover {
+    color: #e67e22;
+    text-decoration: none;   /* prevent underline on hover */
+
+}
+
+
+
+/* FORCE FIX FOR PAGE HERO */
+
+
+.contact-item img {
+    width: 14px !important;
+    height: 14px !important;
+    min-width: 14px !important;
+    min-height: 14px !important;
+    max-width: 14px !important;
+    max-height: 14px !important;
+
+    object-fit: contain !important;
+    display: inline-block !important;
+}

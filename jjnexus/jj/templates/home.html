@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+<!-- HERO SECTION -->
+<section class="hero" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('{% static 'images/Home.jpeg' %}'); padding: 115px 0; color: white; text-align: center;">
+    <div class="overlay">
+        <h1>Welcome to <span>JJ Nexus Global</span></h1>
+        <p>Your trusted partner to build a healthcare career in UAE</p><br>
+            <a href="/contact/" class="btn btn-primary">Let’s begin!</a>        <p class="highlight-text">Dreaming of an international career? </p>
+    <div class="contact-item">
+        <p>
+             <a href="https://wa.me/918590522461" class="btn btn-whatsapp">
+                 <span>💬</span> Chat with Us
+             </a><!--            <a href="https://wa.me/917994943761" class="whatsapp-float" target="_blank">-->
+<!--                   💬Whatspp Now!-->
+<!--                </a>-->
+        </p>
+    </div>
+    </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="services">
+    <h2>Our Services</h2>
+
+    <div class="services-grid">
+
+        <div class="service-box">
+            <h3>🎯 Career Counselling</h3>
+            <p>Get expert advice to choose the right path.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>🎓 Admission Guidance</h3>
+            <p>India & Abroad admissions in top institutions.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>💼 Placement Services</h3>
+            <p>Helping students secure job opportunities.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>💰 Loan Assistance</h3>
+            <p>Easy support for education loans.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>✈ Visa Assistance</h3>
+            <p>Complete visa processing support.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>⚡ Spot Admission</h3>
+            <p>Fast-track admission process.</p>
+        </div>
+
+    </div>
+</section>
+<!-- HEALTHCARE SUPPORT SECTION -->
+<section class="healthcare">
+    <h2>We Support Healthcare Professionals With</h2>
+    <div class="healthcare-grid">
+        <div class="health-card">
+            <h3>🏥 DHA Licence</h3>
+            <p>Assistance for Dubai Health Authority licensing process.</p>
+        </div>
+
+        <div class="health-card">
+            <h3>🩺 MOH Licence</h3>
+            <p>Guidance for Ministry of Health UAE licensing.</p>
+        </div>
+
+        <div class="health-card">
+            <h3>⚕️ DOH Licence</h3>
+            <p>Support for Department of Health Abu Dhabi licensing.</p>
+        </div>
+
+        <div class="health-card">
+            <h3>📄 Dataflow</h3>
+            <p>Complete Dataflow verification assistance.</p>
+        </div>
+
+        <div class="health-card">
+            <h3>📝 Exam Assistance</h3>
+            <p>Preparation support for licensing exams.</p>
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

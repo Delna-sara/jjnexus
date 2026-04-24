@@ -1,0 +1,70 @@
+
+{% extends 'base.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}?v=5">
+{% block content %}
+
+<section class="page-hero" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('{% static 'images/About.jpg' %}'); padding: 5px 0; color: white; text-align: center;">
+
+   <div class="hero-content">
+        <h1>About <span>JJ Nexus Global</span></h1>
+<!--        <h1 style="color:red;"></h1>-->
+        <p>Leading Educational Consultancy in India & UAE</p>
+    </div>
+</section>
+
+<section class="about-info" style="padding: 60px 20px;">
+    <div class="container" style="max-width: 1000px; margin: auto; line-height: 1.8;">
+        <h2 style="color: #e67e22; border-bottom: 2px solid #e67e22; display: inline-block; margin-bottom: 20px;">Who We Are</h2>
+
+        <p><strong>JJ Nexus Global Consultancy</strong> (a unit of Nexus Educational Charitable Trust) is one of the leading educational consultancies in India. Established in 2023 and registered under the Government of Kerala, we have quickly acquired acute expertise and excellence in the field of education.</p>
+
+        <p>We represent about <strong>100 reputed colleges</strong> across the country and refer thousands of candidates every year. With a cogent network of offices located in major cities of India—including our head offices in Bangalore and Vijayawada—we maintain a strong presence in Kerala, Tamil Nadu, Karnataka, and the UAE.</p>
+    </div>
+</section>
+
+<section class="expertise" style="background: #f9f9f9; padding: 10px 20px;">
+    <div class="container" style="max-width: 1000px; margin: auto;">
+        <h2 style="text-align: center; margin-bottom: 20px;">Our Academic Sphere</h2>
+        <div class="expertise-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; text-align: center;">
+            <div class="card" style="background: white; padding: 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                <h3 style="color: #2c3e50;">Medical & Healthcare</h3>
+                <p>Expert guidance for Medical, Paramedical, and Pharmacy courses.</p>
+            </div>
+            <div class="card" style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                <h3 style="color: #2c3e50;">Technical & Creative</h3>
+                <p>Top-tier admissions in Engineering and Architecture.</p>
+            </div>
+            <div class="card" style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                <h3 style="color: #2c3e50;">Management</h3>
+                <p>Securing seats in reputed institutions under Management/NRI quotas.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="why-us" style="padding: 60px 20px;">
+    <div class="container" style="max-width: 1000px; margin: auto;">
+        <h2 style="text-align: center; color: #e67e22; margin-bottom: 30px;">Why People Trust Us?</h2>
+        <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 15px; padding-left: 30px; position: relative;">
+                <span style="position: absolute; left: 0; color: #e67e22;">✔</span>
+                <strong>Government Registered:</strong> Registered under the Government of Kerala.
+            </li>
+            <li style="margin-bottom: 15px; padding-left: 30px; position: relative;">
+                <span style="position: absolute; left: 0; color: #e67e22;">✔</span>
+                <strong>No Extra Fees:</strong> We do not charge any additional fees from candidates.
+            </li>
+            <li style="margin-bottom: 15px; padding-left: 30px; position: relative;">
+                <span style="position: absolute; left: 0; color: #e67e22;">✔</span>
+                <strong>Reputed Affiliations:</strong> We only facilitate admissions in colleges having AICTE, University, or proper affiliations.
+            </li>
+            <li style="margin-bottom: 15px; padding-left: 30px; position: relative;">
+                <span style="position: absolute; left: 0; color: #e67e22;">✔</span>
+                <strong>Affordable Structure:</strong> We offer admission services with much lower fee structures than other consultants.
+            </li>
+        </ul>
+    </div>
+</section>
+
+{% endblock %}
